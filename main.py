@@ -1,3 +1,1 @@
-print('ffffff')
-print('ggg')
-print('master')
+print('Hello')
