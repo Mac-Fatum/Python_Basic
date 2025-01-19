@@ -1,1 +1,2 @@
 print('ffffff')
+print('ggg')
