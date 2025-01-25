@@ -1,4 +1,13 @@
-# TODO здесь писать код
+n = int(input('Количество элементов в списке: '))
+number_list = []
 
-# Список чисел для работы (итоговый алгоритм проверьте на разных списках, придуманных самостоятельно):
-numbers_list = [7, 14, 3, 18, 21, 10, 9, 6]
+
+for i in range(n):
+    number = int(input(f'Введите {i + 1} число в списке: '))
+    number_list.append(number)
+print(f'\nИзначальный список - {number_list}')
+
+for num in range(len(number_list) - 1, -1):
+    if number_list[num] % 2 == 0:
+        print(num, end = ' ')
+
