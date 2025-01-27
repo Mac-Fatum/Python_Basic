@@ -7,7 +7,14 @@ for i in range(n):
     number_list.append(number)
 print(f'\nИзначальный список - {number_list}')
 
-for num in range(len(number_list) - 1, -1):
-    if number_list[num] % 2 == 0:
-        print(num, end = ' ')
+reverse_place = 1
+
+print('Чётные числа в обратном порядке - ', end = '')
+for index, num in enumerate(number_list):
+    if number_list[index - reverse_place] % 2 == 0:
+        print(number_list[index - reverse_place], end=' ')
+    reverse_place += 2
+
+
+
 
